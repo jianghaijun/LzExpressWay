@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="8%" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionBar"
+        android:background="@null">
+
+        <LinearLayout
+            android:id="@+id/llTabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty_two_dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/touch_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnTakePicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/enterprise_info"
+                    android:drawablePadding="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:text="@string/take_picture"
+                    android:textColor="@color/tab_1"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <TextView
+                    android:id="@+id/txtTakePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_below="@+id/btnTakePicture"
+                    android:gravity="top|center"
+                    android:textColor="@color/tab_1"
+                    android:textSize="@dimen/twenty_sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/vTakePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/two_dp"
+                    android:layout_below="@+id/txtTakePhoto"
+                    android:background="@color/main_check_bg" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewLeft"
+                android:layout_width="@dimen/one_dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/dark_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rlUnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/one_px"
+                android:layout_weight="1"
+                android:background="@drawable/touch_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnToBeAudited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/unsubmitted"
+                    android:drawablePadding="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:text="@string/unSubmit"
+                    android:textColor="@color/tab_2"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <TextView
+                    android:id="@+id/txtUnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_below="@+id/btnToBeAudited"
+                    android:gravity="top|center"
+                    android:textColor="@color/tab_2"
+                    android:textSize="@dimen/twenty_sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/vToBeAudited"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/two_dp"
+                    android:layout_below="@+id/txtUnSubmit"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/one_dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/ten_dp"
+                android:layout_marginTop="@dimen/ten_dp"
+                android:background="@color/dark_grey" />
+
+            <RelativeLayout
+                android:id="@+id/rlSubmitting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/one_px"
+                android:layout_weight="1"
+                android:background="@drawable/touch_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnFinish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_centerHorizontal="true"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/submission"
+                    android:drawablePadding="@dimen/ten_dp"
+                    android:gravity="center"
+                    android:text="@string/submission"
+                    android:textColor="@color/tab_3"
+                    android:textSize="@dimen/fourteen_sp" />
+
+                <TextView
+                    android:id="@+id/txtSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_below="@+id/btnFinish"
+                    android:gravity="top|center"
+                    android:textColor="@color/tab_3"
+                    android:textSize="@dimen/twenty_sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/vFinish"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/two_dp"
+                    android:layout_below="@+id/txtSubmit"
+                    android:background="@color/gray" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpWorkingProcedure"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llButtons"
+            android:layout_below="@+id/llTabs"
+            android:background="@null" />
+
+        <LinearLayout
+            android:id="@+id/llButtons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/ten_dp"
+            android:background="@null"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCommonlyUsed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/five_dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue"
+                android:text="@string/commonly_used"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen_sp" />
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/five_dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_blue"
+                android:text="@string/all"
+                android:textColor="@color/white"
+                android:textSize="@dimen/fourteen_sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        android:id="@+id/searchBar"
+        style="@style/MaterialSearchBarLight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:mt_hint="@string/input_working_name"
+        app:mt_maxSuggestionsCount="10"
+        app:mt_speechMode="false" />
+</com.zhy.android.percent.support.PercentRelativeLayout>

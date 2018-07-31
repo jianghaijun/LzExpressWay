@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lzjz.expressway.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fifty_one_dp"
+    android:clickable="true">
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_one_dp"
+        android:background="@drawable/touch_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlItemTree"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null">
+
+            <RelativeLayout
+                android:id="@+id/rlNodeState"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/imgViewState"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:contentDescription="@null" />
+
+                <ImageView
+                    android:id="@+id/imgViewNode"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/node"
+                    android:contentDescription="@null"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/rlRight"
+                android:layout_toRightOf="@+id/rlNodeState"
+                android:gravity="left|center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen_sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlRight"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/ten_dp"
+                android:background="@null">
+
+                <ImageView
+                    android:id="@+id/imgViewSelect"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one_dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddLevel"
+        android:layout_width="@dimen/fifty_dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fourteen_sp" />
+
+    <Button
+        android:id="@+id/btnUpdateLevel"
+        android:layout_width="@dimen/fifty_dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/one_dp"
+        android:background="@color/supervision"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fourteen_sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnDeleteLevel"
+        android:layout_width="@dimen/fifty_one_dp"
+        android:layout_height="match_parent"
+        android:background="@color/main_bg"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fourteen_sp" />
+</com.lzjz.expressway.view.SwipeMenuLayout>

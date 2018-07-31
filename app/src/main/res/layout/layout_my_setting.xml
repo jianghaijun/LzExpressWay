@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/eighty_dp"
+        android:background="@null">
+
+        <ImageView
+            android:id="@+id/imgViewUserAvatar"
+            android:layout_width="@dimen/sixty_dp"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:background="@drawable/user_avatar" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/ten_dp"
+            android:layout_toRightOf="@+id/imgViewUserAvatar"
+            android:gravity="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/twenty_sp" />
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sign_out_btn"
+            android:text="@string/sign_out"
+            android:textColor="@color/supervision"
+            android:textSize="@dimen/twenty_sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btnUpdatePassword"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/touch_bg"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:text="@string/update_password"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btnChangeIp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/touch_bg"
+        android:drawableRight="@drawable/right_arrows"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/ten_dp"
+        android:paddingRight="@dimen/ten_dp"
+        android:text="@string/changeIp"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btnVersion"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/touch_bg"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/ten_dp"
+        android:text="@string/version_check"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btnCleanUpCaching"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/touch_bg"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/ten_dp"
+        android:text="@string/clean_up_caching"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btnCleanLocalCaching"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/touch_bg"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/ten_dp"
+        android:text="@string/clean_local_caching"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btnSyncProcessDictionary"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/touch_bg"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/ten_dp"
+        android:text="@string/sync_process_dictionary"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+
+    <Button
+        android:id="@+id/btnSyncLevel"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fifty_dp"
+        android:background="@drawable/touch_bg"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/ten_dp"
+        android:text="@string/sync_level"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one_dp"
+        android:background="@color/gray" />
+</com.zhy.android.percent.support.PercentLinearLayout>

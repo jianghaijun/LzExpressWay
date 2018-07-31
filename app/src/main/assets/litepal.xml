@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="ZJ_EXPRESSWAY"/>
+    <version value="15"/>
+
+    <list>
+        <mapping class="com.lzjz.expressway.bean.PhotosBean"/>
+        <mapping class="com.lzjz.expressway.bean.ContractorBean"/>
+        <mapping class="com.lzjz.expressway.bean.HistoryBean"/>
+        <mapping class="com.lzjz.expressway.bean.WorkingBean"/>
+        <mapping class="com.lzjz.expressway.bean.UserInfo"/>
+        <mapping class="com.lzjz.expressway.bean.UserLevelBean"/>
+        <mapping class="com.lzjz.expressway.bean.SearchRecordBean"/>
+        <mapping class="com.lzjz.expressway.bean.ProcessDictionaryBean"/>
+        <mapping class="com.lzjz.expressway.bean.SyncLinkageMenuBean"/>
+        <mapping class="com.lzjz.expressway.bean.MainPageBean"/>
+        <mapping class="com.lzjz.expressway.bean.MsgBean"/>
+    </list>
+</litepal>
