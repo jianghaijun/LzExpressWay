@@ -15,12 +15,16 @@ import okhttp3.OkHttpClient;
 
 public class ConstantsUtil {
     // 中交路径
-//    public static final String BASE_URL = "http://192.168.1.118:8080/web/";
-    public static final String BASE_URL = "http://47.96.150.231:8012/tongren/";
+//    public static final String DOMAIN_NAME = "http://192.168.1.118";
+    public static final String DOMAIN_NAME = "http://124.152.210.148" /*"http://114.116.12.219"*/;
+    // 中交路径
+//    public static final String BASE_URL = DOMAIN_NAME + ":8012/lanzhou/";
+    public static final String BASE_URL = DOMAIN_NAME + ":8087/apilanzhou/" /*":8080/web/"*/;
     // 前缀
     public static String prefix = "";
     // accountId
-    public static String ACCOUNT_ID = "tongren_qyh_app_id";
+//    public static String ACCOUNT_ID = "lanzhou_qyh_app_id";
+    public static String ACCOUNT_ID = "lanzhou_qyh_app_id" /*"tongren_qyh_app_id"*/;
     // 参数格式
     public static SameDayBean sameDayBean;
     public static boolean isDownloadApk = false;
@@ -50,20 +54,15 @@ public class ConstantsUtil {
     // 是否登录成功
     public static final String IS_LOGIN_SUCCESSFUL = "IS_LOGIN_SUCCESSFUL";
     // 通讯录地址
-    public static final String Mail_Url = "http://192.168.1.192/tongren_mobile/#/Test/1";
-//    public static final String Mail_Url = "http://47.96.150.231/member/#/Test/1";
+    public static final String Mail_Url = DOMAIN_NAME + "/member/#/Test/1";
     // 轮播图编辑
-//    public static final String Scroll_Photo = "http://192.168.1.192/tongren_mobile/#/newDetail/";
-    public static final String Scroll_Photo = "http://47.96.150.231/member/#/newDetail/";
+    public static final String Scroll_Photo = DOMAIN_NAME + "/member/#/newDetail/";
     // 地图
-//    public static final String Map = "http://192.168.1.192/tongren_mobile/#/map/123";
-    public static final String Map = "http://47.96.150.231/member/#/map/123";
+    public static final String Map = DOMAIN_NAME + "/member/#/map/123";
     // 发起
-//    public static final String star = "http://192.168.1.118/app/#/app/approveMobileByApp";
-    public static final String star = "http://47.96.150.231/app/#/app/approveMobileByApp";
+    public static final String star = DOMAIN_NAME + "/app/#/app/approveMobileByApp";
     // 更新
-//    public static final String update = "http://192.168.1.118/app/#/app/processMobileByApp";
-    public static final String update = "http://47.96.150.231/app/#/app/processMobileByApp";
+    public static final String update = DOMAIN_NAME + "/app/#/app/processMobileByApp";
 
     // 登录
     public static final String LOGIN = prefix + "user/" + "login";
@@ -80,7 +79,6 @@ public class ConstantsUtil {
     public static final String deleteZlLevel = prefix + "batchDeleteUpdateZxHwZlProjectLevel";
     public static final String deleteAqLevel = prefix + "batchDeleteUpdateZxHwAqProjectLevel";
     // 获取首页数据
-//    public static final String getIndexviewHomePage = prefix + "getIndexviewHomePage";
     public static final String getZxHwHomeMobilIndex = prefix + "getZxHwHomeMobilIndex";
     // 图片上传
     public static final String UP_LOAD_PHOTOS = prefix + "appUploadGxAttachment";
@@ -129,7 +127,6 @@ public class ConstantsUtil {
     // 发起流程
     public static final String startFlow = prefix + "startFlow";
     // 新流程详情
-//    public static final String openPageFlow = prefix + "openPageFlow";
     public static final String getZxHwGxProcessDetails = prefix + "getZxHwGxProcessDetails";
     // 系统消息
     public static final String appGetMessageList = prefix + "appGetMessageList";
